@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+.q-pagination{overflow:hidden;padding:0 10px 15px 0}
+.q-pagination ul{float:right}
+.q-pagination ul li{float:left}
+.q-pagination a,.q-pagination span{float:left;color:#555;font-size:12px;font-weight:normal;text-align:center;padding:3px 6px;margin:0 5px 0 0;background:#f5f5f5;line-height:14px;min-width:0;border-radius:2px}
+.q-pagination .current{background:#53ac73;color:#fff;cursor:default}
+.q-pagination a:hover{color:#555;text-decoration:none}
+.q-pagination .ellipse{background:0;border:0;box-shadow:none;font-weight:bold;cursor:default;color:#555}
+.q-pagination .prev,.q-pagination .next{color:#53ac73}
+.q-pagination .prev:hover,.q-pagination .next:hover{background:#53ac73;color:#fff}
+.q-pagination .active .prev,.q-pagination .active .next{background-color:#f5f5f5;color:#999;cursor:default}
+.formError{z-index:990}
+.formError .formErrorContent{z-index:991}
+.formError .formErrorArrow{z-index:996}
+.art-ui-dialog .formError{z-index:5000}
+.art-ui-dialog .formError .formErrorContent{z-index:5001}
+.art-ui-dialog .formError .formErrorArrow{z-index:5006}
+.inputContainer{position:relative;float:left}
+.formError{position:absolute;top:300px;left:300px;display:block;cursor:pointer;text-align:left}
+.formError.inline{position:relative;top:0;left:0;display:inline-block}
+.ajaxSubmit{padding:20px;background:#55ea55;border:1px solid #999;display:none}
+.formError .formErrorContent{width:100%;background:#fff;position:relative;color:#ff3f1a;line-height:18px;font-size:12px;border:1px solid #d8d6d7;padding:5px 8px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;box-shadow:1px 1px 2px rgba(0,0,0,0.1)}
+.formError.inline .formErrorContent{box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;border:0;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;-o-border-radius:0}
+.greenPopup .formErrorContent{background:#33be40}
+.blackPopup .formErrorContent{background:#393939;color:#FFF}
+.formError .formErrorArrow{position:absolute;left:20px;bottom:-7px;width:14px}
+.formError .formErrorArrowBottom{box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;margin:0 0 0 12px;top:2px}
+.formErrorArrow,.formErrorArrow i{position:absolute;width:0;height:0;margin:0;border:7px solid transparent}
+.formErrorArrow{border-top-color:#d8d6d7;border-width:7px 7px 0;bottom:-10px;left:0}
+.formErrorArrow i{top:-8px;left:-7px;border-top-color:#fff}
+.config-roomno-wrap{position:relative}
+.config-roomno-wrap .roomno-table-wrap table{text-align:center}
+.config-roomno-wrap .roomno-table-wrap table tbody+tbody{border-top:0}
+.config-roomno-wrap .roomno-table-wrap table th{font-weight:bolder;text-align:center}
+.config-roomno-wrap .roomno-table-wrap table td{vertical-align:middle}
+.add-roomNo-pop{overflow-y:auto;max-height:360px}
+.add-roonno-pop .item-title{width:80px;text-align:right}
+.add-roonno-pop .add-box{position:relative;width:320px;margin-left:3px}
+.add-roonno-pop .add-box input{width:80px}
+.add-roonno-pop .add-box .q-icon{cursor:pointer;margin-left:3px}
+.add-roonno-pop .create-roomno .label1{width:60px;margin-left:-5px}
+.add-roonno-pop .create-roomno .form-control{width:101px}
+.add-roonno-pop .create-roomno .create-roomno-btn{display:inline-block;color:#fff;padding:5px 12px;font-size:12px;line-height:1.428571429;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;border:1px solid transparent;border-radius:3px;margin-left:15px}
+.add-roonno-pop .create-roomno .create-active{background-color:#5cb85c}
+.add-roonno-pop .room-feature{float:left;width:300px}
+.add-roonno-pop .room-feature li{display:inline-block;min-width:70px;margin-bottom:5px}
+.mod-roonno-pop .mod-item .item-title{width:80px;text-align:right}
+.mod-roonno-pop .mod-item .form-control{width:200px}
+.mod-roonno-pop .checkbox{margin:5px 0 5px 80px}
+.mod-roonno-pop .room-feature{float:left;width:220px}
+.mod-roonno-pop .room-feature li{display:inline-block;min-width:70px;margin-bottom:5px}
+.room-no-dialog .input-error{border-color:#ff674e}
+.room-no-dialog .room-no-formError{z-index:990;width:105px}
+.room-no-dialog .room-no-formError .room-no-formErrorContent{z-index:991}
+.room-no-dialog .room-no-formError .room-no-formErrorArrow{z-index:996}
+.room-no-dialog .room-no-formError{position:absolute;top:300px;left:300px;display:block;cursor:pointer;text-align:left}
+.room-no-dialog .room-no-formError .room-no-formErrorContent{width:100%;background:#fff;position:relative;color:#ff3f1a;line-height:18px;font-size:12px;border:1px solid #d8d6d7;padding:5px 8px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;box-shadow:1px 1px 2px rgba(0,0,0,0.1)}
+.room-no-dialog .room-no-formError .room-no-formErrorArrow{position:absolute;left:20px;top:30px;width:14px}
+.room-no-dialog .room-no-formErrorArrow,.room-no-dialog .room-no-formErrorArrow i{position:absolute;width:0;height:0;margin:0;border:7px solid transparent}
+.room-no-dialog .room-no-formErrorArrow{border-top-color:#d8d6d7;border-width:7px 7px 0;bottom:-10px;left:0}
+.room-no-dialog .room-no-formErrorArrow i{top:-8px;left:-7px;border-top-color:#fff}
+.room-no-dialog .show-formError{display:block}
+.room-no-dialog .hide-formError{display:none}

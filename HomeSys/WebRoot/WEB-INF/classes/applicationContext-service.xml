@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+		<!-- 住宿类型 -->
+		<bean id="accommodationService" class="cn.bdqn.HomeSys.service.impl.AccommodationServiceImpl">
+			<property name="accommodationDao" ref="accommodationDao"></property>
+		</bean>
+		<!-- 订单状态 -->
+		<bean id="orderstatusService" class="cn.bdqn.HomeSys.service.impl.OrderstatusServiceImpl">
+			<property name="orderstatusDao" ref="orderstatusDao"></property>
+		</bean>
+		<!-- 班次表 -->
+		<bean id="shiftService" class="cn.bdqn.HomeSys.service.impl.ShiftServiceImpl">
+			<property name="shiftDao" ref="shiftDao"></property>
+		</bean>
+		<!-- 员工表 -->
+		<bean id="staffService" class="cn.bdqn.HomeSys.service.impl.StaffServiceImpl">
+			<property name="staffDao" ref="staffDao"></property>
+		</bean>
+		<!-- 支付方式-->
+		<bean id="paymentService" class="cn.bdqn.HomeSys.service.impl.PaymentServiceImpl">
+			<property name="paymentDao" ref="paymentDao"></property>
+		</bean>
+		<!-- 位置表的实现 -->
+		<bean id="positionService" class="cn.bdqn.HomeSys.service.impl.PositionServiceImpl">
+			<property name="positionDao" ref="positionDao"></property>
+		</bean>
+		<!-- 价格表的实现 -->
+		<bean id="priceService" class="cn.bdqn.HomeSys.service.impl.PriceServiceImpl">
+			<property name="priceDao" ref="priceDao"></property>
+		</bean>
+		<!-- 房间类型层  -->
+		<bean id="roomtypeService" class="cn.bdqn.HomeSys.service.impl.RoomtypeServiceImpl">
+			<property name="roomtypeDao" ref="roomtypeDao"></property>
+		</bean>
+		
+		<!-- 房间状态Service层  -->
+		<bean id="roomstatusService" class="cn.bdqn.HomeSys.service.impl.RoomstatusServiceImpl">
+			<property name="roomstatusDao" ref="roomstatusDao"></property>
+		</bean>
+		<!-- 角色 -->
+		<bean id="roleService" class="cn.bdqn.HomeSys.service.impl.RoleServiceImpl">
+			<property name="roleDao" ref="roleDao"></property>
+		</bean>
+		<!-- 房间 -->
+		<bean id="roomService" class="cn.bdqn.HomeSys.service.impl.RoomServiceImpl">
+			<property name="roomDao" ref="roomDao"></property>
+		</bean>
+		<!--客户Service-->
+		<bean id="customerService" class="cn.bdqn.HomeSys.service.impl.CustomerServiceImpl">
+			<property name="customerDao" ref="customerDao"></property>
+		</bean>
+		<!-- 订单Service -->
+		<bean id="ordersService" class="cn.bdqn.HomeSys.service.impl.OrdersServiceImpl">
+			<property name="ordersDao" ref="ordersDao"></property>
+		</bean>
+		<!-- 预定Service -->
+		<bean id="reserveService" class="cn.bdqn.HomeSys.service.impl.ReserveServiceImpl">
+			<property name="reserveDao" ref="reserveDao"></property>
+		</bean>
+		<!-- 订单明细 -->
+		<bean id="ordersitemService" class="cn.bdqn.HomeSys.service.impl.OrdersitemServiceImpl">
+			<property name="ordersitemDao" ref="ordersitemDao"></property>
+		</bean>
+	</beans>

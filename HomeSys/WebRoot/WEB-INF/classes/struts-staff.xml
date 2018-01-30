@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="staff-default"  extends="struts-default">
+		<!-- 登陆 -->	
+		<action name="login" class="cn.bdqn.HomeSys.web.LoginAction" method="Login">
+			<result name="success">/many.jsp</result>
+			<result name="input">/Login.jsp</result>
+		</action>
+		<!-- 退出 -->
+		<action name="exit" class="cn.bdqn.HomeSys.web.LoginAction" method="exit">
+			<result name="success">/Login.jsp</result>
+		</action>
+	</package>
+</struts>    

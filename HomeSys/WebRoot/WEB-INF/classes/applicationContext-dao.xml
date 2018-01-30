@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+	">
+		<!-- 住宿类型 -->
+		<bean id="accommodationDao" class="cn.bdqn.HomeSys.dao.impl.AccommodationDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 订单状态 -->
+		<bean id="orderstatusDao" class="cn.bdqn.HomeSys.dao.impl.OrderstatusDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 班次表 -->
+		<bean id="shiftDao" class="cn.bdqn.HomeSys.dao.impl.ShiftDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 员工 -->
+		<bean id="staffDao" class="cn.bdqn.HomeSys.dao.impl.StaffDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 支付方式 -->
+		<bean id="paymentDao" class="cn.bdqn.HomeSys.dao.impl.PaymentDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 位置表的实现 -->
+		<bean id="positionDao" class="cn.bdqn.HomeSys.dao.impl.PositionDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 价格表的实现 -->
+		<bean id="priceDao" class="cn.bdqn.HomeSys.dao.impl.PriceDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 房间类型表  Dao层 -->
+		<bean id="roomtypeDao" class="cn.bdqn.HomeSys.dao.impl.RoomtypeDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 房间状态表  Dao层 -->
+		<bean id="roomstatusDao" class="cn.bdqn.HomeSys.dao.impl.RoomstatusDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 角色 -->
+		<bean id="roleDao" class="cn.bdqn.HomeSys.dao.impl.RoleDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 房间 -->
+		<bean id="roomDao" class="cn.bdqn.HomeSys.dao.impl.RoomDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!--订单Dao -->
+		<bean id="ordersDao" class="cn.bdqn.HomeSys.dao.impl.OrdersDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		
+		<!-- 客户Dao -->
+		<bean id="customerDao" class="cn.bdqn.HomeSys.dao.impl.CustomerDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 预定 -->
+		<bean id="reserveDao" class="cn.bdqn.HomeSys.dao.impl.ReserveDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		<!-- 订单明细 -->
+		<bean id="ordersitemDao" class="cn.bdqn.HomeSys.dao.impl.OrdersitemDaoImpl">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+	 </beans>

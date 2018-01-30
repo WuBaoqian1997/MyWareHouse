@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+		<!-- LoginAction -->
+		<bean id="loginAction" class="cn.bdqn.HomeSys.web.LoginAction">
+			<property name="staffService" ref="staffService"></property>
+		</bean>
+		<!-- 房间表的action -->
+		<bean id="roomAction" class="cn.bdqn.HomeSys.web.RoomAction">
+			<property name="roomService" ref="roomService"></property>
+			<property name="positionService" ref="positionService"></property>
+			<property name="roomstatusService" ref="roomstatusService"></property>
+			<property name="roomtypeService" ref="roomtypeService"></property>
+		</bean>
+		<!-- 订单表的action -->
+		<bean id="orderAction" class="cn.bdqn.HomeSys.web.OrderAction">
+			<property name="accommodationService" ref="accommodationService"></property>
+			<property name="roomService" ref="roomService"></property>
+			<property name="roomstatusService" ref="roomstatusService"></property>
+			<property name="orderstatusService" ref="orderstatusService"></property>
+			<property name="orderService" ref="ordersService"></property>
+			<property name="customerService" ref="customerService"></property>
+			<property name="paymentService" ref="paymentService"></property>
+			<property name="ordersitemService" ref="ordersitemService"></property>
+			
+		</bean>
+		<!-- 楼层设置 -->
+	<bean id="positionAction" class="cn.bdqn.HomeSys.web.PositionAction">
+		<property name="positionService" ref="positionService"></property>
+	</bean>
+	<!-- 房价设置 -->
+	<bean id="roomAction1" class="cn.bdqn.HomeSys.web.RoomPriceAction">
+		<property name="roomService" ref="roomService"></property>
+		<property name="roomtypeService" ref="roomtypeService"></property>
+		<property name="priceService" ref="priceService"></property>
+	</bean>
+	<!-- 房型设置 -->
+	<bean id="typeAction" class="cn.bdqn.HomeSys.web.RoomTypeAction">
+		<property name="roomtypeService" ref="roomtypeService"></property>
+	</bean>
+	
+	<!-- 房价设置 -->
+	<bean id="priceAction" class="cn.bdqn.HomeSys.web.PriceAction">
+		<property name="priceService" ref="priceService"></property>
+	</bean>
+		<!-- 预定表的action -->
+		<bean id="reserveAction" class="cn.bdqn.HomeSys.web.ReserveAction">
+			<property name="roomService" ref="roomService"></property>
+			<property name="roomtypeService" ref="roomtypeService"></property>
+			<property name="reserveService" ref="reserveService"></property>
+			<property name="roomstatusService" ref="roomstatusService"></property>
+			<property name="customerService" ref="customerService"></property>
+		</bean>
+	</beans>

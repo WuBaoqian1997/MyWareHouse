@@ -1,0 +1,78 @@
+ /**  
+* @Title: IRoleDao.java
+* @Package cn.bdqn.HomeSys.dao
+* @Description: TODO该方法的主要作用：
+* @author A18ccms A18ccms_gmail_com  
+* @date 2017-7-24 下午4:11:11
+* @version V1.0  
+*/
+package cn.bdqn.HomeSys.dao;
+
+import java.util.List;
+
+import cn.bdqn.HomeSys.entity.Accommodation;
+import cn.bdqn.HomeSys.entity.Role;
+
+ /**   
+ *    
+ * 项目名称：HomeSys   
+ * 类名称：IRoleDao   
+ * 类描述：   
+ * 创建人：Mu Xiongxiong  
+ * 创建时间：2017-7-24 下午4:11:11   
+ * 修改人：Mu Xiongxiong   
+ * 修改时间：2017-7-24 下午4:11:11   
+ * 修改备注：   
+ * @version    
+ *    
+ */
+public interface IRoleDao {
+	
+/**
+ * 
+* @Title: saveIRole
+* @Description: 该方法的主要作用：增加角色
+* @param  @param accommodation 设定文件  
+* @return  返回类型：void   
+* @throws
+ */
+	void saveRole(Role role);
+	/**
+	 * 
+	* @Title: updateIRole
+	* @Description: 该方法的主要作用：修改角色
+	* @param  @param role 设定文件  
+	* @return  返回类型：void   
+	* @throws
+	 */
+	void updateRole(Role role);
+	/**
+	 * 
+	* @Title: delIRole
+	* @Description: 该方法的主要作用：删除角色
+	* @param  @param role 设定文件  
+	* @return  返回类型：void   
+	* @throws
+	 */
+	void delRole(Role role);
+	/**
+	 * 
+	* @Title: getRoleById
+	* @Description: 该方法的主要作用：根据编号获得角色
+	* @param  @param roleId
+	* @param  @return 设定文件  
+	* @return  返回类型：Role   
+	* @throws
+	 */
+	Role getRoleById(Integer roleId);
+	/**
+	 * 
+	* @Title: getRoleList
+	* @Description: 该方法的主要作用：获取所有的角色
+	* @param  @return 设定文件  
+	* @return  返回类型：List<Role>   
+	* @throws
+	 */
+	List<Role> getRoleList();
+
+}

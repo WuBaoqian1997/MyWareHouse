@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="reservedefault"  extends="struts-default">
+		<!-- 登陆 -->	
+		<action name="getRoomAndRoomType" class="cn.bdqn.HomeSys.web.ReserveAction" method="getRoomAndRoomType">
+			<result name="success">/Reservation.jsp</result>
+		</action>
+		<!-- 添加预定 -->
+		<action name="saveReserve" class="cn.bdqn.HomeSys.web.ReserveAction" method="saveReserve">
+			<result name="success"  type="redirectAction">getRoomList</result>
+		</action>
+	</package>
+</struts>    

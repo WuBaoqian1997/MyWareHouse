@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Table</title>
+		<link rel="stylesheet" href="dakang/plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="dakang/css/global.css" media="all">
+		<link rel="stylesheet" type="dakang/text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css"/>
+		<link rel="stylesheet" href="dakang/css/table.css" />
+        <link rel="stylesheet" href="stylesheets/css/jquery-ui.css"/>
+	</head>
+
+	<body>
+		<div class="admin-main">
+			<fieldset class="layui-elem-field">
+				<legend>数据列表</legend>
+				<div class="layui-field-box">
+					<table class="site-table table-hover">
+						<thead>
+							<tr>
+								<th>所属分类</th>
+								<th>标题</th>
+								<th>作者</th>
+								<th>创建时间</th>
+								<th>浏览量</th>
+								<th>状态</th>
+								<th>排序值</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Layui</td>
+								<td>
+									<a href="/manage/article_edit_1">演示站点发布成功啦。</a>
+								</td>
+								<td>Beginner</td>
+								<td>2016-11-16 11:50</td>
+								<td>1298</td>
+								<td>正常</td>
+								<td>99</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Layui</td>
+								<td>
+									<a href="/manage/article_edit_19">神5飞天震寰宇</a>
+								</td>
+								<td>就是我</td>
+								<td>2016-11-18 10:18</td>
+								<td>74</td>
+								<td>正常</td>
+								<td>0</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+							<tr>
+								<td>C#</td>
+								<td>
+									<a href="/manage/article_edit_8">验证（C#和正则表达式）</a>
+								</td>
+								<td>Beginner</td>
+								<td>2016-11-17 14:20</td>
+								<td>144</td>
+								<td>正常</td>
+								<td>0</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+							<tr>
+								<td>博客</td>
+								<td>
+									<a href="/manage/article_edit_4">博客的功能点收集，欢迎留言。</a>
+								</td>
+								<td>Beginner</td>
+								<td>2016-11-16 16:43</td>
+								<td>663</td>
+								<td>草稿</td>
+								<td>0</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+							<tr>
+								<td>JavaScript</td>
+								<td>
+									<a href="/manage/article_edit_23">124324325</a>
+								</td>
+								<td>123</td>
+								<td>2016-11-19 22:03</td>
+								<td>0</td>
+								<td>草稿</td>
+								<td>0</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+                            <tr>
+								<td>Layui</td>
+								<td>
+									<a href="/manage/article_edit_1">演示站点发布成功啦。</a>
+								</td>
+								<td>Beginner</td>
+								<td>2016-11-16 11:50</td>
+								<td>1298</td>
+								<td>正常</td>
+								<td>99</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+                            <tr>
+								<td>Layui</td>
+								<td>
+									<a href="/manage/article_edit_1">演示站点发布成功啦。</a>
+								</td>
+								<td>Beginner</td>
+								<td>2016-11-16 11:50</td>
+								<td>1298</td>
+								<td>正常</td>
+								<td>99</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+                            <tr>
+								<td>Layui</td>
+								<td>
+									<a href="/manage/article_edit_1">演示站点发布成功啦。</a>
+								</td>
+								<td>Beginner</td>
+								<td>2016-11-16 11:50</td>
+								<td>1298</td>
+								<td>正常</td>
+								<td>99</td>
+								<td>
+	<a id="dialog-link" class="ui-button ui-corner-all ui-widget" target="_self" class="layui-btn layui-btn-normal layui-btn-mini">职位变更</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</fieldset>
+            <!-- ui-dialog -->
+			<div class="admin-table-page">
+				<div id="page" class="page">
+				</div>
+			</div>
+            <!-- ui-dialog -->
+            <div id="dialog" title="职位变更">
+                    <form>
+                        <p style="margin-bottom:15px;">
+                            <label>员工姓名：</label>
+                            <input type="text" name="name"/>
+                        </p>
+                        <p style="margin-bottom:15px;">
+                            <label>所在职位：</label>
+                            <input type="text" name="name"/>
+                        </p>
+                        <p style="margin-bottom:15px;">
+                            <label>变更职位：</label>
+                            <input type="text" name="name"/>
+                        </p>
+                        <p  style="margin-left:85px;">
+                        	<input type="submit" name="sub" value="确认变更"/>
+                        </p>
+                    </form>
+            </div>
+		</div>
+        <script src="external/jquery/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="plugins/layui/layui.js"></script>
+		<script>
+			$( "#dialog" ).dialog({
+				autoOpen: false,
+				width:250,
+				buttons: [
+				{
+						text: "Cancel",
+						click: function() {
+							$( this ).dialog( "close" );
+						}
+					}
+				]
+			});
+			// Link to open the dialog
+			$( "#dialog-link" ).click(function( event ) {
+				$( "#dialog" ).dialog( "open" );
+				event.preventDefault();
+			});
+			layui.config({
+				base: 'plugins/layui/modules/'
+			});
+
+			layui.use(['icheck', 'laypage','layer'], function() {
+				var $ = layui.jquery,
+					laypage = layui.laypage,
+					layer = parent.layer === undefined ? layui.layer : parent.layer;
+				$('input').iCheck({
+					checkboxClass: 'icheckbox_flat-green'
+				});
+
+				//page
+				laypage({
+					cont: 'page',
+					pages: 25 //总页数
+						,
+					groups: 5 //连续显示分页数
+						,
+					jump: function(obj, first) {
+						//得到了当前页，用于向服务端请求对应数据
+						var curr = obj.curr;
+						if(!first) {
+							//layer.msg('第 '+ obj.curr +' 页');
+						}
+					}
+				});
+
+				$('#search').on('click', function() {
+					parent.layer.alert('你点击了搜索按钮')
+				});
+
+				$('#add').on('click', function() {
+					$.get('temp/edit-form.html', null, function(form) {
+						layer.open({
+							type: 1,
+							title: '添加表单',
+							content: form,
+							btn: ['保存', '取消'],
+							area: ['600px', '400px'],
+							maxmin: true,
+							yes: function(index) {
+								console.log(index);
+							},
+							full: function(elem) {
+								var win = window.top === window.self ? window : parent.window;
+								$(win).on('resize', function() {
+									var $this = $(this);
+									elem.width($this.width()).height($this.height()).css({
+										top: 0,
+										left: 0
+									});
+									elem.children('div.layui-layer-content').height($this.height() - 95);
+								});
+							}
+						});
+					});
+				});
+
+				$('#import').on('click', function() {
+					var that = this;
+					var index = layer.tips('只想提示地精准些', that,{tips: [1, 'white']});
+					$('#layui-layer'+index).children('div.layui-layer-content').css('color','#000000');
+				});
+
+				$('.site-table tbody tr').on('click', function(event) {
+					var $this = $(this);
+					var $input = $this.children('td').eq(0).find('input');
+					$input.on('ifChecked', function(e) {
+						$this.css('background-color', '#EEEEEE');
+					});
+					$input.on('ifUnchecked', function(e) {
+						$this.removeAttr('style');
+					});
+					$input.iCheck('toggle');
+				}).find('input').each(function() {
+					var $this = $(this);
+					$this.on('ifChecked', function(e) {
+						$this.parents('tr').css('background-color', '#EEEEEE');
+					});
+					$this.on('ifUnchecked', function(e) {
+						$this.parents('tr').removeAttr('style');
+					});
+				});
+				$('#selected-all').on('ifChanged', function(event) {
+					var $input = $('.site-table tbody tr td').find('input');
+					$input.iCheck(event.currentTarget.checked ? 'check' : 'uncheck');
+				});
+			});
+		</script>
+	</body>
+
+</html>

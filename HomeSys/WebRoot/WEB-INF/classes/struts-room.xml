@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="room-default"  extends="struts-default">
+		<!-- 查询全部-->	
+		<action name="getRoomList" class="roomAction" method="getRoomList">
+			<result name="success">/zht/home.jsp</result>
+		</action>
+		<!-- 置净 -->
+		<action name="updZhijing" class="roomAction" method="updZhijing">
+			<result name="success">/zht/home.jsp</result>
+		</action>
+		<!-- 置脏 -->
+		<action name="updZhizang" class="roomAction" method="updZhizang">
+			<result name="success">/zht/home.jsp</result>
+		</action>
+		<!-- 维修 -->
+		<action name="updWeixui" class="roomAction" method="updWeixui">
+			<result name="success">/zht/home.jsp</result>
+		</action>
+		<!-- 维修 -->
+		<action name="updJieShuWeixui" class="roomAction" method="updJieShuWeixui">
+			<result name="success">/zht/home.jsp</result>
+		</action>
+		<!-- 查询全部 -->
+		<action name="queryAllRoom" class="roomAction1" method="queryAllRoom">
+			<result name="success">HomePriceSet.jsp</result>
+		</action>
+		<!-- 删除房间爱你 -->
+		<action name="deleteRoom" class="roomAction1" method="delRoom">
+			<result name="DelSuccess" type="redirectAction">queryAllRoom</result>
+		</action>
+		<!-- 增加房间 -->
+		<action name="insertRoom" class="roomAction1" method="saveRoom">
+			<result name="AddSuccess">HomePriceSet.jsp</result>
+		</action>
+		<!-- 根据id查询 -->
+		<action name="byId" class="roomAction1" method="getById">
+			<result name="GetSuccess">Dialog.jsp</result>
+		</action>
+		<!-- 修改房间 -->
+		<action name="updateRoom" class="roomAction1" method="updateRoomInfo">
+			<result name="UpdateSuccess" type="redirectAction">queryAllRoom</result>
+		</action>
+		<action name="getLoad" class="roomAction1" method="getLoad">
+			<result name="Success" type="redirectAction">queryAllRoom</result>
+		</action>
+		
+		
+		<!--  -->
+		<action name="delectRoom" class="roomAction" method="delPosition">
+			<result name="DelSuccess" type="redirectAction">queryRoomAction</result>
+		</action>
+		<action name="saveRoom" class="roomAction" method="savaRoom">
+			<result name="success"  type="redirectAction">queryRoomAction</result>
+		</action>
+		<action name="byroomId" class="roomAction" method="getByRoomId">
+			<result name="GetSuccess">HomeNumberUpdate.jsp</result>
+		</action>
+		<action name="updateRoomInfo" class="roomAction" method="updateRoom">
+			<result name="success"  type="redirectAction">queryRoomAction</result>
+		</action>
+		<action name="queryRoomAction" class="roomAction" method="queryAllRoom">
+			<result name="success">HomeNumberSet.jsp</result>
+		</action>
+	</package>
+</struts>    

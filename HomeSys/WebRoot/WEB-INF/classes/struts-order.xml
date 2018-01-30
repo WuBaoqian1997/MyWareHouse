@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="order-default"  extends="struts-default">
+		<!-- 跳转到订单添加里面 -->
+		<action name="getOrdersInfo" class="orderAction" method="getOrdersInfo">
+			<result name="success">/daycheck_in.jsp</result>
+		</action>
+		<!-- 日租入住 -->
+		<action name="check_in" class="orderAction" method="check_in">
+			<result name="success">/join_room.jsp</result>
+		</action>
+		<!-- 获取所有的支付方式,准备交押金 -->
+		<action name="getPayment" class="orderAction" method="getPayment">
+			<result name="success">/save_money.jsp</result>
+		</action>
+		<!-- 交押金 -->
+		<action name="saveMoney" class="orderAction" method="saveMoney">
+			<result name="success" type="redirectAction">viewFinance</result>
+		</action>
+		<!-- 显示该客房的信息-->
+		<action name="client_list" class="orderAction" method="client_list">
+			<result name="success">/client_list.jsp</result>
+		</action>
+		<!-- 显示财务明细-->
+		<action name="viewFinance" class="orderAction" method="viewFinance">
+			<result name="success">/affairs_detail.jsp</result>
+		</action>
+		<!-- 跳转到结账退房的界面-->
+		<action name="getQuitMoney" class="orderAction" method="getQuitMoney">
+			<result name="success">/quit_money.jsp</result>
+		</action>
+		<!-- 退房-->
+		<action name="refund" class="orderAction" method="refund">
+			<result name="success" type="redirectAction">getRoomList</result>
+		</action>
+		<!-- 跳转到入账页面 -->
+		<action name="tiaozhuan_record" class="orderAction" method="tiaozhuan_record">
+			<result name="success">/recorded.jsp</result>
+		</action>
+		<!--入账-->
+		<action name="recorded" class="orderAction" method="recorded">
+			<result name="success" type="redirectAction">getRoomList</result>
+		</action>
+		<!--跳转到调价的页面-->
+		<action name="v_updateHousePrice" class="orderAction" method="v_updateHousePrice">
+			<result name="success">/upHousePrice.jsp</result>
+		</action>
+		<!--调价-->
+		<action name="updateHousePrice" class="orderAction" method="updateHousePrice">
+			<result name="success" type="redirectAction">getRoomList</result>
+		</action>
+		<!--跳转到换房的界面-->
+		<action name="v_swopRoom" class="orderAction" method="v_swopRoom">
+			<result name="success">swopHouse.jsp</result>
+		</action>
+		<!--换房操作-->
+		<action name="swopRoom" class="orderAction" method="swopRoom">
+			<result name="success" type="redirectAction">getRoomList</result>
+		</action>
+	</package>
+</struts>    

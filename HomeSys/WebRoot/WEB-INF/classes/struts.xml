@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="queryAllPosition" class="positionAction" method="queryAllPosition">
+			<result name="success">FloorSet.jsp</result>
+		</action>
+		<action name="insertPosition" class="positionAction" method="savePosition">
+			<result name="AddSuccess" type="redirectAction">queryAllPosition</result>
+		</action>
+		<action name="deletePosition" class="positionAction" method="delPosition">
+			<result name="DelSuccess" type="redirectAction">queryAllPosition</result>
+		</action>
+	</package>
+	<!-- 员工表 -->
+	<include file="struts-staff.xml"></include>
+	<!-- 房间表 -->
+	<include file="struts-room.xml"></include>
+	<!-- 订单表-->
+	<include file="struts-order.xml"></include>
+	<!-- 楼层 -->
+	<include file="struts-floor.xml"></include>
+	<!-- 房间类型 -->
+	<include file="struts-type.xml"></include>
+	<!-- 价格 -->
+	<include file="struts-price.xml"></include>
+	<!-- 预定表-->
+	<include file="struts-reserve.xml"></include>
+</struts>    
